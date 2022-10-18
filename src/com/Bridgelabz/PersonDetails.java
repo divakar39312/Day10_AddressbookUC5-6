@@ -27,6 +27,10 @@ public class PersonDetails {
 		this.phoneNo = phoneNo;
 	}
 	
+	public PersonDetails() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getFirstName() {
 		return firstName;
 	}
@@ -114,4 +118,4 @@ public class PersonDetails {
 		return "PersonDetails [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
 				+ city + ", state=" + state + ", zipNo=" + zipNo + ", phoneNo=" + phoneNo + "]";
 	}
-}
+	}
