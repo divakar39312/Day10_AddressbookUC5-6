@@ -5,27 +5,33 @@ import java.util.Scanner;
 
 public class AddressBook {
 	
+private String bookName;
+	
+	public AddressBook(String bookName) {
+		super();
+		this.bookName = bookName;
+	}
+	public AddressBook() {
+		
+	}
+	
+	public String getBookName() {
+		return bookName;
+	}
+	public void setBookName(String bookName) {
+		this.bookName = bookName;
+	}
+
 	static Scanner sc = new Scanner(System.in);
 	static ArrayList<PersonDetails> addressBook = new ArrayList<PersonDetails>();
 
-		public static void main(String[] args) {
-			// TODO Auto-generated method stub
-			System.out.println("Welcome to Address Book Program");
-		
-			AddressBook addressList = new AddressBook();
-			System.out.println("");
-					addressList.addContact();
-					addressList.editContact();
-					addressList.deleteContact();	
-		}
-		
 		//Add Contact Method
 		public void addContact(){
 			System.out.println("Add (Multiple) Contact");
-			System.out.println("Please Enter how mnay Contacts You want");
+			System.out.println("Please Enter how many Contacts You want");
 			int max = sc.nextInt();
 			// For Multiple Contacts Enter How many You want 
-			for (int i=0;i<=max;i++) {
+			for (int i=0;i<max;i++) {
 			PersonDetails person1 = new PersonDetails();
 				
 			System.out.println("Enter a first name:");
@@ -51,7 +57,7 @@ public class AddressBook {
 			System.out.println("===================================");
 			addressBook.add(person1);
 		}
-			System.out.print(addressBook);
+			System.out.println(addressBook);
 			System.out.println("successfully added person new contacts");
 			
 		}
@@ -117,5 +123,17 @@ public class AddressBook {
 				addressBook.remove(person);
 			}
 			System.out.println(addressBook);
+		}
+		
+		@Override
+		public String toString() {
+			return "AddressBook [bookName = " + bookName + "]";
+		}
+
+		public static ArrayList<PersonDetails> getAddressBook() {
+			return addressBook;
+		}
+		public static void setAddressBook(ArrayList<PersonDetails> addressBook) {
+			AddressBook.addressBook = addressBook;
 		}
 }

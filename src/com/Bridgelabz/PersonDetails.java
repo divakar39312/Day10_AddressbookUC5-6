@@ -13,8 +13,6 @@ public class PersonDetails {
 	private long phoneNo;
 	//static Scanner sc = new Scanner(System.in);
 
-	
-	
 	public PersonDetails(String firstName, String lastName, String address, String city, String state, int zipNo,
 			long phoneNo) {
 		super();
@@ -115,7 +113,12 @@ public class PersonDetails {
 
 	@Override
 	public String toString() {
-		return "\n PERSON DETAILS \n firstName=" + firstName + " \n lastName=" + lastName + "\n address=" + address + "\n city="
-				+ city + "\n state=" + state + "\n zipNo=" + zipNo + "\n phoneNo=" + phoneNo;
+		return "\n PERSON DETAILS \n First Name = " + firstName + " \n Last Name = " + lastName + "\n Address = " + address + "\n City = "
+				+ city + "\n State = " + state + "\n Zip No = " + zipNo + "\n Phone No = " + phoneNo;
 	}
+	
+	public void space() {
+		System.out.println("");
+	}
+	
 	}
