@@ -115,7 +115,7 @@ public class PersonDetails {
 
 	@Override
 	public String toString() {
-		return "PersonDetails [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
-				+ city + ", state=" + state + ", zipNo=" + zipNo + ", phoneNo=" + phoneNo + "]";
+		return "\n PERSON DETAILS \n firstName=" + firstName + " \n lastName=" + lastName + "\n address=" + address + "\n city="
+				+ city + "\n state=" + state + "\n zipNo=" + zipNo + "\n phoneNo=" + phoneNo;
 	}
 	}
