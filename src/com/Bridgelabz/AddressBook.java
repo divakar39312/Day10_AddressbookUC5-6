@@ -40,7 +40,18 @@ public class AddressBook {
 		for(PersonDetails pd : personsList ) {
 		System.out.println(pd.toString());
 		}
-	
+		System.out.println("Please Enter Person Details to Edit");
+		String name = sc.next();
+		
+		for (int i= 0;i<numOfPersons;i++) {
+			PersonDetails pd = personsList[i];
+			if(pd.getFirstName() == name)
+				personsList [1] = new PersonDetails("pravin", "kumar", "Kaikalur", "Kaknada", "ap", 53, 3653) ;
+		}
+		for(PersonDetails pd : personsList ) {
+			System.out.println(pd.toString());
+		}
+		sc.close();
 	}
 
 }

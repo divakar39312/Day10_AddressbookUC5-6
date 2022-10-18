@@ -114,5 +114,4 @@ public class PersonDetails {
 		return "PersonDetails [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
 				+ city + ", state=" + state + ", zipNo=" + zipNo + ", phoneNo=" + phoneNo + "]";
 	}
-
 }
