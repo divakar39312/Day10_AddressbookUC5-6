@@ -4,50 +4,115 @@ import java.util.Scanner;
 
 public class PersonDetails {
 	
-	String firstName;
-	String lastName;
-	String address;
-	 String city;
-	String state;
-	int zipNo;
-	long phoneNo;
-	static Scanner sc = new Scanner(System.in);
+	private String firstName;
+	private String lastName;
+	private String address;
+	private String city;
+	private String state;
+	private int zipNo;
+	private long phoneNo;
+	//static Scanner sc = new Scanner(System.in);
 
-	public PersonDetails() {
-
-		System.out.println("Enter firstName");
-		firstName =sc.next();
-		
-		System.out.println("Enter LastName");
-		lastName =sc.next();
-		
-		System.out.println("Enter Address");
-		address =sc.next();
-		
-		System.out.println("Enter City");
-		city =sc.next();
-		
-		System.out.println("Enter State");
-		state =sc.next();
-		
-		System.out.println("Enter Zip");
-		zipNo =sc.nextInt();
-		
-		System.out.println("Enter phoneNumber");
-		phoneNo =sc.nextLong();
+	
+	
+	public PersonDetails(String firstName, String lastName, String address, String city, String state, int zipNo,
+			long phoneNo) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.city = city;
+		this.state = state;
+		this.zipNo = zipNo;
+		this.phoneNo = phoneNo;
+	}
+	
+	public String getFirstName() {
+		return firstName;
 	}
 
-	
-	
-	public void show() {
-		// TODO Auto-generated method stub
-		System.out.println( "Person Details" );
-		System.out.println("FirstName = "+ firstName);
-		System.out.println("Address = "+ address);
-		System.out.println("city = "+ city);
-		System.out.println("state = "+ state);
-		System.out.println("zip = " +zipNo);
-		System.out.println("phoneNumber =" + phoneNo);
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+
+
+	public String getLastName() {
+		return lastName;
+	}
+
+
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+
+
+	public String getCity() {
+		return city;
+	}
+
+
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+
+
+	public String getState() {
+		return state;
+	}
+
+
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+
+
+	public int getZipNo() {
+		return zipNo;
+	}
+
+
+
+	public void setZipNo(int zipNo) {
+		this.zipNo = zipNo;
+	}
+
+
+
+	public long getPhoneNo() {
+		return phoneNo;
+	}
+
+
+
+	public void setPhoneNo(long phoneNo) {
+		this.phoneNo = phoneNo;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "PersonDetails [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
+				+ city + ", state=" + state + ", zipNo=" + zipNo + ", phoneNo=" + phoneNo + "]";
 	}
 
 }
